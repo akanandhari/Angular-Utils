@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AutocompleteComponent } from './utility/autocomplete/autocomplete/autocomplete.component';
 import { LocaleFormatPipe } from './pipe/locale-format.pipe';
 import { NonNegativeDirective } from './directive/non-negative.directive';
+
 @NgModule({
   imports:      [ BrowserModule, FormsModule,BrowserAnimationsModule,ReactiveFormsModule,HttpClientModule ],
   declarations: [ AppComponent, HelloComponent, SnackBarComponent, AutocompleteComponent, LocaleFormatPipe, NonNegativeDirective ],
