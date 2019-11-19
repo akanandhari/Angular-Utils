@@ -1,0 +1,60 @@
+.wrapper
+{
+    position: fixed;
+    bottom:2rem;
+    right:4rem;
+    display: flex;
+    flex-flow: column wrap;
+    height: auto;
+    justify-content: space-around;
+    width:300px;
+    z-index: 1051;
+}
+aside
+{
+    width: 100%;
+     margin-bottom:1rem;
+     font-size: 14px;
+     padding:.25rem;
+    border-radius: 4px;
+    background-color: black;
+    color:white;
+ 
+}
+.notification
+{
+    float: left;
+    padding-left:4px;
+    margin:.35px;
+    text-transform: capitalize;
+    font-size: 14px;
+   min-width:260px;
+}
+.close
+{
+    float:right;
+    background:black;
+    width:30px;
+    font-size: 12px;
+    font-weight: bold;
+    color:white;
+    cursor: pointer;
+}
+
+.remove
+{
+    display: none;
+}
+.info
+{
+    border-left:4px solid #ffb300;
+}
+.danger
+{
+    border-left:4px solid #ea001b;
+}
+.success
+{
+    border-left:4px solid #ccdc39;
+}
+

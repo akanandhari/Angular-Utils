@@ -1,0 +1,14 @@
+<div class="wrapper" >
+  <aside  @items *ngFor="let message of list;let i = index "    [ngClass]="{'info':     message.type=='info',
+  'danger':   message.type=='danger',
+  'success':  message.type=='success'}" >
+    <div class="notification"
+
+        >
+
+    
+      {{message.message}}
+    </div>
+ 
+  </aside>
+</div>
