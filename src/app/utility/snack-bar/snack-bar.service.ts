@@ -5,8 +5,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-
-@Injectable()
 export class SnackBarService {
 public list:BehaviorSubject<any>=new BehaviorSubject<any>(Object);
 

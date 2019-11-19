@@ -6,7 +6,7 @@ import { trigger, transition, style, animate } from '@angular/animations';
   selector: 'snack-bar',
   templateUrl: './snack-bar.component.html',
   styleUrls: ['./snack-bar.component.css'],
-  providers:[SnackBarService],
+
   animations: [
     trigger('items', [
       transition(':enter', [

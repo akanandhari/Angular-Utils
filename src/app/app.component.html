@@ -3,4 +3,6 @@
   Start editing to see some magic happen :)
 </p>
 <button (click)="clickMe()">clickMe</button>
+     <app-autocomplete  [searchURL]="'/api/Project/usersearch'"  [selectedObjIn]='oSearch' [DisplayContent]="['Name','Surname']" (SelectedItem)="SelectedItem($event,'ppm')"></app-autocomplete>
+              
 <snack-bar></snack-bar>

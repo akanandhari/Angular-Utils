@@ -1,0 +1,37 @@
+
+<h4>{{Label}}<span class="clear" (click)="clear()">Clear</span></h4>
+<input 
+class="form-control"
+ type="text"
+ autocomplete="off"
+ #searchComponent 
+ name="searchInput"  [formControl]="queryField" 
+  maxlength="{{DefaultMaxLength}}" >
+ <!-- (input)="onSearch(searchComponent.value)"   (change)="onFocus(searchComponent.value)"  -->
+
+
+<div style="position: relative;width:100%;margin:0px;
+    display: inline-block;" *ngIf="autoCompleteContent.length>0" >
+<div   class="autocompleteContent"  >
+  <div  *ngFor="let item of autoCompleteContent" class="autocompleteItem"   (mousedown)="SelectItem(item)" >
+   
+   <span *ngFor="let content of DisplayContent" class="inlineSpan">
+  {{item[content]}}
+  </span>
+  <p *ngIf="item.Mail" style="font-style: italic;font-size:10px" class="mb-1">{{item.Mail}}</p>
+  </div>
+</div>
+</div>
+
+<div style="position: relative;width:100%;margin:0px;
+    display: inline-block;" *ngIf="flag" >
+<div   class="autocompleteContent"  >
+  <div  class="autocompleteItem"   >
+   
+   
+  <p  style="font-style: italic;font-size:10px" class="mb-1">{{errorMessage}}</p>
+  </div>
+</div>
+</div>
+
+
